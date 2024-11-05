@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+
+    <body>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname"></input>
+        <br>
+        
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="lname"></input>
+        <br>
+
+        <label for="robux">Amount generate: </label>
+        <input type="number" id="robux" name="robux"></input>
+        <br>
+
+        <label for="arrival">When do you want robux: </label>
+        <input type="date" id="arrival" name="arrival"></input>
+        
+        <br>
+        <label>Gender: </label>
+
+        <input type="radio" id="Male" name="Gender"></input>
+        <label for="Gender">Male</label>
+        <input type="radio" id="Female" name="Gender"></input>
+        <label for="Gender">Female</label>
+
+        
+        
+        
+        <label
+
+
+
+
+
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+
+
+
+
+</html>
+
+<html>
+    <br> <br> <br>
+    <h2> This part does like a sum thing of two numbers</h>
+
+    <button onclick="computesum()">Add 2 Numbers</button><br>
+    
+    
+    <br><br>
+    <label id="sumlabel">The sum of _ and _ is: </label>
+    <input type="number" id="sum" readonly></input>
+
+
+    <script>
+        function computesum()
+        {
+            let a='',b='';
+            a = prompt('Type the first number.');
+            b = prompt('Type the second number.');
+
+            document.getElementById("sumlabel").innerHTML = "<label>The sum of "+a+" and "+b+" is: </label>";
+            document.getElementById("sum").value = parseInt(a)+parseInt(b);
+        }
+    </script>
+</html>
