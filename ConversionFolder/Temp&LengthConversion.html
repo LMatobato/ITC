@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 1: Converter</title>
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<!--nav bar template , to be copied on to other htmls-->
+<ul class="navbar">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+      <a href="../index.html">Home</a>
+      <a href="../MenuFolder/socials.html">Socials</a>
+      <a href="../MenuFolder/oshis.html">Oshis</a>
+    </div>
+  </li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+      <div class="dropdown-content">
+        <a href="../ConversionFolder/Temp&LengthConversion.html">Assignment 1: Conversion</a>
+        <a href="../IncTaxCalcFoldr/IncTaxCalc.html">Assignment 2: Income Tax Calculator</a>
+        <a href="../FactorialSumAveFolder/FacSumAve.html">Assignment 3: Loops</a>
+        <a href="../SimplePayrollFolder/SimPayroll.html">Assignment 4: Payroll</a>
+      </div>
+    </li>
+</ul>
+
+<body>
+  <div class="air"></div>
+  <div class="maincontent">
+  <h1>Assignment 1: Converter</h1>
+  <br>
+  <div class="flex-container">
+    <div>
+    <label for="numconv">Number to be converted: </label><br>   
+    <input id="numconv" name="Convert" type="number"></div>
+    <div class="air"></div>
+  <div>
+    <label> Converted number: </label> <br>
+    <input id="output" name="output1" type="number" readonly /></div>
+    <div class="air"></div>
+    <div>
+    <button id="CeltoFah" class="button" aria-label="Convert from Celsius to Fahrenheit">°C -> °F</button>
+    <button id="FahtoCel" aria-label="Convert from Fahrenheit to Celsius">°F -> °C</button>
+  </div>
+
+  <div>
+    <button id="MetertoFeet" aria-label="Convert from Meter to Feet">m -> ft</button>
+    <button id="FeettoMeter" aria-label="Convert from Feet to Meter">ft -> m</button>
+  </div>
+  <div>
+    <button id="clearvalues" aria-label="Clear Values">Clear Values</button>
+  </div>
+  </div>
+</body>
+</div>
+<script src="conversion.js"></script>
+</html>

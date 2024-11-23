@@ -1,0 +1,22 @@
+.image-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .hover-image {
+    width: 300px; /* Adjust size as needed */
+    height: 583px; /* Adjust size as needed */
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+  }
+
+  .hover-image:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  .image-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }

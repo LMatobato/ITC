@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 4: Payroll</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./simp.css">
+</head>
+<body>
+  <!-- nav bar template -->
+  <ul class="navbar">
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+              <a href="../index.html">Home</a>
+              <a href="../MenuFolder/socials.html">Socials</a>
+              <a href="../MenuFolder/oshis.html">Oshis</a>
+          </div>
+      </li>
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+          <div class="dropdown-content">
+              <a href="../ConversionFolder/Temp&LengthConversion.html">Assignment 1: Conversion</a>
+              <a href="../IncTaxCalcFoldr/IncTaxCalc.html">Assignment 2: Income Tax Calculator</a>
+              <a href="../FactorialSumAveFolder/FacSumAve.html">Assignment 3: Loops</a>
+              <a href="../SimplePayrollFolder/SimPayroll.html">Assignment 4: Payroll</a>
+          </div>
+      </li>
+  </ul>
+  <div class="air"></div>
+  <div class="maincontent">
+      <h1>Assignment 4: Payroll</h1>
+      <br>
+      <div class="flex-container">
+          <div>
+              <form id="employeeForm">
+                  <div class="input-group">
+                      <label for="empName">Employee Name:</label>
+                      <input type="text" id="empName" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="daysWorked">Days Worked:</label>
+                      <input type="number" id="daysWorked" required min="0">
+                  </div>
+                  <div class="input-group">
+                      <label for="dailyRate">Daily Rate:</label>
+                      <input type="number" id="dailyRate" required min="0">
+                  </div>
+                  <div class="input-group">
+                      <label for="deduction">Deduction Amount:</label>
+                      <input type="number" id="deduction" required min="0">
+                  </div>
+                  <div class="button-group">
+                      <button type="button" onclick="addEmployee()">Add Employee</button>
+                  </div>
+              </form>
+
+              <div class="input-group">
+                  <label for="deleteLineNo">Line Number to Delete:</label>
+                  <input type="number" id="deleteLineNo" min="1">
+                  <button type="button" onclick="deleteEmployee()">Delete Employee</button>
+              </div>
+
+              <table id="payrollTable">
+                  <thead>
+                      <tr>
+                          <th>No.</th>
+                          <th>Employee Name</th>
+                          <th>Days Worked</th>
+                          <th>Daily Rate</th>
+                          <th>Gross Pay</th>
+                          <th>Deduction Amount</th>
+                          <th>Net Pay</th>
+                      </tr>
+                  </thead>
+                  <tbody></tbody>
+              </table>
+          </div>    
+      </div>
+  </div>
+  <script src="simp.js"></script>
+</body>
+</html>

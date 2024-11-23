@@ -1,0 +1,110 @@
+/* Michi mochievee colors:
+#A370A9 #F3E2EC #5D327A
+#E8A2D4 #5D2F4C #8A5E79
+#C5AEB8 #7B3784
+#C28CE2 #E4C4AD
+*/
+
+
+* {
+  font-family: 'Montserrat Rounded', 'Varela Round', sans-serif;
+}
+
+body {
+  background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/2cbc0ced-1140-41b6-ae29-7e0bb2234066-profile_banner-480.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.air {
+min-height: 30px;
+}
+
+div {
+text-align: center;
+}
+
+.maincontent {
+max-width: 50%;
+padding: 5%;
+margin: auto  ;
+background-color: rgba(255,255,255,0.9);
+border-radius: 25px;  
+border: 2px solid;
+}
+
+.flex-container{
+display: flex;
+flex-direction:column;
+}
+
+
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5d327a;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;   
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #7b3784;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E8A2D4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.button-group {
+  margin: 15px 0;
+}
+button {
+  background-color: #5D327A;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #7B3784;
+}

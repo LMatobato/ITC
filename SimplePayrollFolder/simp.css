@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #5D327A;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #5D327A;
+    color: white;
+}
+.input-group {
+    margin: 10px 0;
+}
+.input-group label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+.input-group input {
+    width: 150px;
+    padding: 5px;
+}

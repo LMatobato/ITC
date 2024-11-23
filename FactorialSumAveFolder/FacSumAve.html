@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3: FacSumAve</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- nav bar template -->
+    <ul class="navbar">
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../MenuFolder/socials.html">Socials</a>
+                <a href="../MenuFolder/oshis.html">Oshis</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+            <div class="dropdown-content">
+                <a href="../ConversionFolder/Temp&LengthConversion.html">Assignment 1: Conversion</a>
+                <a href="../IncTaxCalcFoldr/IncTaxCalc.html">Assignment 2: Income Tax Calculator</a>
+                <a href="../FactorialSumAveFolder/FacSumAve.html">Assignment 3: Loops</a>
+                <a href="../SimplePayrollFolder/SimPayroll.html">Assignment 4: Payroll</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="air"></div>
+    <div class="maincontent">
+        <h1>Assignment 3: Loops</h1>
+        <br>
+        <div class="flex-container">
+            <div>
+                <p>
+                    <label for="nlimit">Input a value for n:</label>
+                    <input id="nlimit" type="number">
+                    <button onclick="calculateAll()">Calculate</button>
+                </p>
+                
+                <!-- Results sections -->
+                <div id="results">
+                    <h3>Factorial (Using While Loop):</h3>
+                    <p id="factorial"></p>
+                    
+                    <h3>Sum (Using Do-While Loop):</h3>
+                    <p id="sum"></p>
+                    
+                    <h3>Average (Using For Loop):</h3>
+                    <p id="average"></p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="facsumave.js"></script>
+</body>
+</html>
